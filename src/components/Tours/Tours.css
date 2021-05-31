@@ -1,0 +1,55 @@
+.section-tours {
+  padding: 5rem;
+}
+
+.tours-popular {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  margin: 0 2rem;
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  transition: all 1s;
+}
+
+.card__heading {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 75%;
+}
+
+.card__heading span {
+  background-image: linear-gradient(
+    45deg,
+    rgb(253, 1, 70) 0%,
+    rgb(17, 17, 107) 100%
+  );
+}
+
+.card__info {
+  text-align: justify;
+  padding: 2rem;
+}
+
+.card__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.btn__read-more {
+  border: none;
+  background-color: transparent;
+  color: #8c0857;
+  cursor: pointer;
+}

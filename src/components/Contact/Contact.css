@@ -1,0 +1,56 @@
+.section-contact {
+  padding: 5rem;
+}
+
+.contact__form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(36, 249, 225, 1),
+    rgba(73, 170, 247, 1)
+  );
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid green;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}

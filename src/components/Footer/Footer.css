@@ -1,0 +1,15 @@
+.footer {
+  height: 95vh;
+  /* padding: 5rem; */
+  /* margin-top: 10rem; */
+  position: relative;
+  clip-path: polygon(0% 25vh, 100% 0, 100% 100%, 0% 100%);
+  background-image: linear-gradient(
+    45deg,
+    rgba(36, 249, 225, 1) 0%,
+    rgba(73, 170, 247, 1) 25%,
+    rgba(198, 42, 190, 1) 50%,
+    rgb(234, 14, 168) 75%,
+    rgb(253, 0, 65) 100%
+  );
+}
