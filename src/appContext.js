@@ -9,7 +9,7 @@ export const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [userComments, setUserComments] = useState([]);
+  const [userStories, setUserStories] = useState([]);
   const [tours, setTours] = useState([]);
   const [toursPopular, setToursPopular] = useState([]);
   const [tourModal, setTourModal] = useState(null);
@@ -40,11 +40,11 @@ export const AppProvider = ({ children }) => {
       } = data[2];
       const toursPopular = tours.slice(0, 3);
 
-      const userComment = margeArrayObj(users, jokes);
+      const userStory = margeArrayObj(users, jokes);
 
       setLoading(false);
       setTours(tours);
-      setUserComments(userComment);
+      setUserStories(userStory);
       setToursPopular(toursPopular);
     } catch (err) {
       setLoading(false);
@@ -115,7 +115,7 @@ export const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         loading,
-        userComments,
+        userStories,
         tours,
         toursPopular,
         tourModal,
