@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useGlobalContext } from '../../appContext';
 
+import Tour from './Tour';
 import PopularTour from './PopularTour';
 
 import './Tours.css';
 
 const TourList = () => {
-  const { toursPopular } = useGlobalContext();
+  const { tours, toursPopular } = useGlobalContext();
+  const [isAllToursActive, setIsAllToursActive] = useState(false);
 
   const popularTours = toursPopular.map(popTour => (
     <PopularTour key={popTour.id} {...popTour} />
   ));
+
+  const toggleAllTours = () => {
+    setIsAllToursActive(!isAllToursActive);
+  };
+
+  const allTours = tours.map(tour => <Tour key={tour.id} {...tour} />);
 
   return (
     <section className='section-tours'>
@@ -19,10 +27,11 @@ const TourList = () => {
       </div>
       <div className='tours-popular mb-xl'>{popularTours}</div>
       <div className='center-text'>
-        <a className='btn btn-dark' href='/#'>
-          All tours
-        </a>
+        <button className='btn btn-dark mb-xl' onClick={toggleAllTours}>
+          {isAllToursActive ? ' Hide all tours' : 'All tours'}
+        </button>
       </div>
+      <div className='tours-popular'>{isAllToursActive ? allTours : null}</div>
     </section>
   );
 };

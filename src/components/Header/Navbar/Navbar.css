@@ -39,7 +39,6 @@
   text-transform: capitalize;
   letter-spacing: 1px;
   width: 10rem;
-  cursor: pointer;
   padding: 1rem;
   text-shadow: 2px 2px 2px #333;
   transition: all 0.3s;

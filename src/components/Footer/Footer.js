@@ -1,11 +1,16 @@
 import React from 'react';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <h1>pettergov1@gmail.com</h1>
+      <div className='social'>
+        <p className='paragraph'>pettergov1@gmail.com</p>
+        <FaGithub />
+        <FaLinkedinIn />
+      </div>
     </footer>
   );
 };

@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Tour = ({ id, name, image, openTourModal }) => {
+const Tour = ({ id, name, image }) => {
   return (
-    <article className='tour'>
-      <img src={image} alt='tour' onClick={() => openTourModal(id)} />
-      <h2>{name}</h2>
+    <article className='card'>
+      <img className='card__img' src={image} alt='tour' />
+      <h4 className='card__heading'>
+        <span>{name}</span>
+      </h4>
     </article>
   );
 };

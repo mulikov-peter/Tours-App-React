@@ -5,8 +5,12 @@ const UserStory = ({ userStory, position }) => {
 
   return (
     <article className={`story ${position}`}>
-      <img src={picture.large} alt={name.first} className='user-img' />
-      <h2 className='heading-tertiary mb-sm'>
+      <img
+        src={picture.large}
+        alt={name.first}
+        className='story__user-img mb-sm'
+      />
+      <h2 className='story__caption mb-sm'>
         {name.first} {name.last}
       </h2>
       <h3 className='heading-tertiary mb-sm'>
