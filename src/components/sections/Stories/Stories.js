@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
 
-import { useGlobalContext } from '../../appContext';
+import { useGlobalContext } from '../../../appContext';
 
 import UserStory from './UserStory';
 import './Stories.css';
@@ -56,7 +56,7 @@ const Stories = () => {
   });
 
   return (
-    <section className='section-stories'>
+    <section className='section-stories' id='stories'>
       <div className='center-text mb-lg'>
         <h2 className='heading-secondary'>People about us</h2>
       </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import { FaBars, FaSpa } from 'react-icons/fa';
 import { useGlobalContext } from '../../../appContext';
 import './Navbar.css';
@@ -7,8 +9,6 @@ const Navbar = () => {
   const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
 
   const handleDisplaySubmenu = e => {
-    // console.log(e.target);
-    // console.log(e);
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const positionCenter = (tempBtn.left + tempBtn.right) / 2;
@@ -48,14 +48,14 @@ const Navbar = () => {
             </button>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href='/stories'>
+            <Link className='nav__link' to='stories' spy={true} smooth={true}>
               stories
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href='/contact'>
+            <Link className='nav__link' to='contact' spy={true} smooth={true}>
               contact
-            </a>
+            </Link>
           </li>
           <li className='nav__item'>
             <a className='nav__link' href='cart'>

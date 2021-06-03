@@ -4,10 +4,12 @@
 
 .tours-popular {
   display: flex;
+  margin-top: 4rem;
 }
 
 .card {
   position: relative;
+
   margin: 0 2rem;
   flex: 1;
   border-radius: 4px;
@@ -42,6 +44,7 @@
 }
 
 .card__img {
+  display: block;
   width: 100%;
   height: 20rem;
   object-fit: cover;

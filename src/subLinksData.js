@@ -2,8 +2,6 @@ import {
   FaAddressCard,
   FaBriefcase,
   FaHandshake,
-  // FaBorderAll,
-  // FaTree,
   FaUmbrellaBeach,
   FaMountain,
   FaCampground,
@@ -23,8 +21,6 @@ const sublinks = [
   {
     page: 'tours',
     links: [
-      // { label: 'all tours', icon: <FaBorderAll />, url: '/all' },
-      // { label: 'forest', icon: <FaTree />, url: '/forest' },
       { label: 'sea rest', icon: <FaUmbrellaBeach />, url: '/sea rest' },
       { label: 'mountains', icon: <FaMountain />, url: '/mountains' },
       { label: 'agriturismo', icon: <FaCampground />, url: '/agriturismo' },

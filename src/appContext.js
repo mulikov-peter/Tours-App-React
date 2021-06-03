@@ -51,40 +51,8 @@ export const AppProvider = ({ children }) => {
     }
   };
 
-  // Fetch tours
-  // const fetchTours = async () => {
-  //   setLoading(true);
-  //   try {
-  //     const response = await axios.get(TOURS_URL);
-  //     const { data: tours } = response;
-  //     const toursPopular = tours.slice(0, 3);
-
-  //     setLoading(false);
-  //     setTours(tours);
-  //     setToursPopular(toursPopular);
-  //   } catch (err) {
-  //     setLoading(false);
-  //     console.log(err);
-  //   }
-  // };
-
-  // Fetch users
-  // const fetchUsers = async () => {
-  //   try {
-  //     const response = await axios.get(USERS_URL);
-  //     const {
-  //       data: { results: users },
-  //     } = response;
-  //     setUsers(users);
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
-
   useEffect(() => {
     fetchData();
-    // fetchTours();
-    // fetchUsers();
   }, []);
 
   // Submenu

@@ -1,7 +1,6 @@
 import React from 'react';
-import { useGlobalContext } from '../../appContext';
-
-import Loader from '../Loader/Loader';
+import { useGlobalContext } from '../../../appContext';
+import Loader from '../../Loader/Loader';
 
 import './About.css';
 
@@ -26,6 +25,7 @@ const About = () => {
           <h3 className='heading-tertiary mb-sm'>
             We know how to make happy moments
           </h3>
+
           <p className='paragraph mb-md'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Aspernatur, dolore iste culpa cupiditate tempora quaerat sed rerum!
