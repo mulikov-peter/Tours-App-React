@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 import { FaBars, FaSpa } from 'react-icons/fa';
-import { useGlobalContext } from '../../../appContext';
+import { useGlobalContext } from '../../appContext';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -58,9 +59,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='nav__item'>
-            <a className='nav__link' href='cart'>
+            <NavLink className='nav__link' to='/cart'>
               cart
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

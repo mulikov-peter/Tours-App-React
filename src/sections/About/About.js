@@ -1,11 +1,13 @@
 import React from 'react';
-import { useGlobalContext } from '../../../appContext';
-import Loader from '../../Loader/Loader';
+import { useGlobalContext } from '../../appContext';
+
+import Loader from '../../components/Loader/Loader';
 
 import './About.css';
 
 const About = () => {
   const { toursPopular, loading } = useGlobalContext();
+
   const images = toursPopular.map((tour, i) => (
     <img
       className={`gallery__photo gallery__photo-${i + 1}`}

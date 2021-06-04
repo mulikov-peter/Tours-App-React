@@ -1,9 +1,9 @@
 import React from 'react';
 
 import HeaderTextBox from './HeaderTextBox/HeaderTextBox';
-import Navbar from './Navbar/Navbar';
-import Sidebar from '../Sidebar/Sidebar';
-import Submenu from './Submenu/Submenu';
+import Navbar from '../../components/Navbar/Navbar';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Submenu from '../../components/Submenu/Submenu';
 
 import './Header.css';
 
@@ -13,6 +13,7 @@ const Header = () => {
       <Navbar />
       <HeaderTextBox />
       <Sidebar />
+
       <Submenu />
     </header>
   );

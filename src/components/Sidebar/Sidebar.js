@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import { FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from '../../appContext';
 import sublinks from '../../subLinksData';
@@ -18,9 +20,9 @@ const Sidebar = () => {
           {links?.map((linkItem, i) => {
             const { url, icon, label } = linkItem;
             return (
-              <a key={i} href={url}>
+              <NavLink key={i} to={url}>
                 {icon} {label}
-              </a>
+              </NavLink>
             );
           })}
         </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useGlobalContext } from '../../../appContext';
+import { NavLink } from 'react-router-dom';
+
+import { useGlobalContext } from '../../appContext';
 
 import './Submenu.css';
 
@@ -25,22 +27,21 @@ const Submenu = () => {
     if (links.length === 5) setColumns('col-5');
   }, [subMenuLocation, links]);
 
+  const submenuClass = `${isSubmenuOpen ? 'submenu show' : 'submenu'}`;
+
+  const submenuLinks = links.map((link, i) => {
+    const { label, url, icon } = link;
+    return (
+      <NavLink key={i} to={url}>
+        {icon} {label}
+      </NavLink>
+    );
+  });
+
   return (
-    <aside
-      className={`${isSubmenuOpen ? 'submenu show' : 'submenu'}`}
-      ref={container}
-    >
+    <aside className={submenuClass} ref={container}>
       <h4>{page}</h4>
-      <div className={`submenu-center ${columns}`}>
-        {links.map((link, i) => {
-          const { label, url, icon } = link;
-          return (
-            <a key={i} href={url}>
-              {icon} {label}
-            </a>
-          );
-        })}
-      </div>
+      <div className={`submenu-center ${columns}`}>{submenuLinks}</div>
     </aside>
   );
 };

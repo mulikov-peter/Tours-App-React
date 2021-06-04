@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa';
 
-import { useGlobalContext } from '../../../appContext';
+import { useGlobalContext } from '../../appContext';
 
 import UserStory from './UserStory';
 import './Stories.css';

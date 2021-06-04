@@ -13,7 +13,7 @@ const sublinks = [
   {
     page: 'company',
     links: [
-      { label: 'about us', icon: <FaAddressCard />, url: '/about us' },
+      { label: 'about', icon: <FaAddressCard />, url: '/about' },
       { label: 'carries', icon: <FaBriefcase />, url: '/carries' },
       { label: 'partners', icon: <FaHandshake />, url: '/partners' },
     ],

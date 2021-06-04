@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useGlobalContext } from '../../../appContext';
+import { useGlobalContext } from '../../appContext';
 
 import Tour from './Tour';
 import PopularTour from './PopularTour';
@@ -8,6 +8,7 @@ import './Tours.css';
 
 const TourList = () => {
   const { tours, toursPopular } = useGlobalContext();
+
   const [isAllToursActive, setIsAllToursActive] = useState(false);
 
   const popularTours = toursPopular.map(popTour => (
@@ -29,13 +30,7 @@ const TourList = () => {
           {isAllToursActive ? ' Hide all tours' : 'All tours'}
         </button>
       </div>
-      <div
-        className={
-          isAllToursActive
-            ? 'tours-popular mt-xl'
-            : 'tours-populartours-popular'
-        }
-      >
+      <div className={isAllToursActive ? 'tours-popular mt-xl' : null}>
         {isAllToursActive ? allTours : null}
       </div>
     </section>
