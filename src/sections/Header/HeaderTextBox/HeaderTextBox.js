@@ -8,7 +8,7 @@ const HeaderTextBox = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
-    <div className='header__text-box' onMouseOver={closeSubmenu}>
+    <div className='header__text-box center' onMouseOver={closeSubmenu}>
       <h1 className='heading-primary  heading-primary-main'>The Best Tours</h1>
       <p className='heading-primary-sub'>adventure is starting here</p>
       <Link className='btn btn-dark' to='tours' spy={true} smooth={true}>

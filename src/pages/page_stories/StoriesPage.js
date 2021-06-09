@@ -1,7 +1,9 @@
+import Stories from '../../sections/Stories/Stories';
+
 const StoriesPage = () => {
   return (
     <div className='modal__page'>
-      <h1>Stories page</h1>
+      <Stories />
     </div>
   );
 };

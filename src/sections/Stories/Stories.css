@@ -8,7 +8,6 @@
   display: flex;
   overflow: hidden;
   margin: 0 auto;
-  width: 80vw;
   height: 42rem;
   max-width: 80rem;
   text-align: center;
@@ -31,13 +30,14 @@
 
 .story__user-img {
   border-radius: 50%;
-  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 
 .active-slide {
   opacity: 1;
   transform: translateX(0);
 }
+
 .prev-slide {
   opacity: 0;
   transform: translateX(-100%);
@@ -51,16 +51,15 @@
   cursor: pointer;
   top: 42%;
   font-size: 4rem;
-  /* color: rgba(73, 170, 247, 1); */
   color: #0a2540;
 }
 
 .slider__btn-prev {
-  left: 0%;
+  left: 0;
 }
 
 .slider__btn-next {
-  right: 0%;
+  right: 0;
 }
 
 .slider__dots {
@@ -82,84 +81,6 @@
   cursor: pointer;
   transition: all 0.5s;
 }
-
 .active-dot {
   background-color: rgba(73, 170, 247, 1);
 }
-
-/* .slider__dot:last-child {
-  margin: 0;
-} */
-
-/* ----------------------- */
-/* .story {
-  transform: skewX(-12deg);
-  background: linear-gradient(
-    45deg,
-    rgba(36, 249, 225, 1) 0%,
-    rgba(73, 170, 247, 1) 25%,
-    rgba(198, 42, 190, 1) 50%,
-    rgb(234, 14, 168) 75%,
-    rgb(253, 0, 65) 100%
-  );
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%);
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 1rem;
-  padding: 6rem;
-  padding-left: 9rem;
-  font-size: 1.6rem;
-} */
-
-/* .story__shape {
-  width: 15rem;
-  height: 15rem;
-  float: left;
-
-  transform: translateX(-3rem) skewX(12deg);
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-
-  clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-  border-radius: none;
-} */
-
-/* .story__img {
-  height: 100%;
-   transform: translateX(-4rem) scale(1.4); 
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: all 0.5s;
-} */
-
-/* .story__text {
-  transform: skewX(12deg);
-} */
-
-/* .story__caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  text-align: center;
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-} */
-
-/* .story:hover .story__caption {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-} */
-
-/* .story:hover .story__img {
-  transform: translateX(-4rem) scale(1);
-  filter: blur(3px) brightness(80%);
-} */

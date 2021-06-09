@@ -5,7 +5,6 @@ import './Contact.css';
 const Contact = () => {
   return (
     <section className='section-contact' id='contact'>
-      <div className='contact-bg'>
         <div className='contact__form'>
           <form action='#' className='form'>
             <div className='center-text mb-md'>
@@ -49,7 +48,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
     </section>
   );
 };

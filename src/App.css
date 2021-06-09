@@ -32,6 +32,11 @@ h1 {
   text-align: center !important;
 }
 
+.center {
+  display: grid;
+  place-items: center;
+}
+
 .mb-xl {
   margin-bottom: 8rem !important;
 }
@@ -107,8 +112,8 @@ h1 {
 }
 
 .modal__page {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   position: absolute;
   overflow: hidden;
   top: 0;

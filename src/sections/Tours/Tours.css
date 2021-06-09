@@ -5,6 +5,7 @@
 .tours-popular {
   display: flex;
   margin-top: 4rem;
+  transition: all 0.5s;
 }
 
 .card {

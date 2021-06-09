@@ -51,7 +51,7 @@ const Stories = () => {
         key={i}
         className={`slider__dots__dot ${activeClass}`}
         data-slide={i}
-      ></button>
+      >&#8203;</button>
     );
   });
 

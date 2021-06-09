@@ -1,9 +1,11 @@
 import React from 'react';
 
+import About from '../../sections/About/About';
+
 const AboutPage = () => {
   return (
     <div className='modal__page'>
-      <h1>About page</h1>
+      <About />
     </div>
   );
 };
